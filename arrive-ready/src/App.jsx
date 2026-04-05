@@ -298,3 +298,4 @@ export default function JetLagPlanner() {
     </div>
   );
 }
+// v3 - fixed logos, readable overlay, Nunito labels, Outfit button
