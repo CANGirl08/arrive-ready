@@ -11,7 +11,7 @@ function getSkyTheme(hour) {
 }
 
 const StarField = () => {
-  const stars = Array.from({ length: 80 }, (_, i) => ({ cx: ((i * 137.5) % 100) + "%", cy: ((i * 97.3) % 100) + "%", r: i % 5 === 0 ? 1.5 : i % 3 === 0 ? 1 : 0.6, op: 0.3 + (i % 7) * 0.1 }));
+  const stars = Array.from({ length: 90 }, (_, i) => ({ cx: ((i * 137.5) % 100) + "%", cy: ((i * 97.3) % 100) + "%", r: i % 5 === 0 ? 1.5 : i % 3 === 0 ? 1 : 0.6, op: 0.3 + (i % 7) * 0.1 }));
   return (
     <svg style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 0, opacity: 0.6 }}>
       {stars.map((s, i) => <circle key={i} cx={s.cx} cy={s.cy} r={s.r} fill="white" opacity={s.op} />)}
