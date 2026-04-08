@@ -28,13 +28,15 @@ const EarthArcLogo = ({ glow, hour }) => {
       <path d={"M" + (cx - rx) + " " + cy + " A" + rx + " " + ry + " 0 0 1 " + (cx + rx) + " " + cy} stroke={glow} strokeWidth="2.2" fill="none" strokeLinecap="round" opacity="0.9" />
       {above && (
         <g transform={"translate(" + px + "," + py + ") rotate(" + rd + ")"}>
-          <polygon points="0,-5 -2.5,3 0,1.5 2.5,3" fill="white" opacity="0.95" />
-          <line x1="-4" y1="0.5" x2="4" y2="0.5" stroke={glow} strokeWidth="1.2" strokeLinecap="round" />
-          <line x1="-1.5" y1="2.5" x2="1.5" y2="2.5" stroke={glow} strokeWidth="0.8" strokeLinecap="round" opacity="0.7" />
-          <circle cx="0" cy="0" r="3.5" fill={glow} opacity="0.18" />
+                    <polygon points="0,-8 -4,5 0,2.5 4,5" fill="white" opacity="0.95" />
+                    <line x1="-6.5" y1="0.5" x2="6.5" y2="0.5" stroke={glow} strokeWidth="1.8" strokeLinecap="round" />
+                    <line x1="-2.5" y1="3.5" x2="2.5" y2="3.5" stroke={glow} strokeWidth="1.2" strokeLinecap="round" opacity="0.7" />
+                    <circle cx="0" cy="0" r="5.5" fill={glow} opacity="0.18" />
         </g>
       )}
       <line x1={cx - rx - 3} y1={cy} x2={cx + rx + 3} y2={cy} stroke={glow} strokeWidth="1.5" opacity="0.5" strokeLinecap="round" />
+            <circle cx={px} cy={py + 10} r="3.5" fill={glow} opacity="0.9" />
+            <circle cx={px} cy={py + 10} r="7" fill={glow} opacity="0.15" />
     </svg>
   );
 };
