@@ -298,4 +298,4 @@ export default function JetLagPlanner() {
     </div>
   );
 }
-// v3 - fixed logos, readable overlay, Nunito labels, Outfit button
+// v4 - force fresh Vercel build: Nunito labels, Outfit button, fixed logos, overlay
